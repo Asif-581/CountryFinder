@@ -1,0 +1,17 @@
+<div class="card"  routerLink="/country/{{country.alpha3Code}}">
+
+    <img
+      [src]="country.flag"
+      [alt]="country.name"
+     
+    />
+
+  <div class="card-content">
+    <div class="country-title">
+      <h4>{{country.name}}</h4>
+    </div>
+    <span>Population:{{country.population}}</span>
+    <span>Region:{{country.region}}</span>
+    <span>Capital:{{country.capital}}</span>
+  </div>
+</div>
